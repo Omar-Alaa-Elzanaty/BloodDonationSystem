@@ -1,0 +1,32 @@
+system summary:
+Blood Donation system was created to connect between the donor and organizations.Any person want to 
+donate can get account on system and donating blood.Any organization can start recieving donations
+by regitser in the system.Admin has permission to Add,Delete,Remove any person or organization on
+the system
+
+use case description:
+1- .person register on system for first time,choose organization and donate with blood
+   .system logs this process between organization and person
+
+2- .organization register for first time on system
+
+3- .organization sign in 
+   .show it's blood donating informations
+4- .person login
+   .person show his donating history
+
+Actors:
+->person
+	-can donate with blood
+	-can show his donation history
+->organization
+	-can show it's Donation history
+	-can know amount of diff types of bloods it's has
+->Admin	
+	-can make any of CRUD operations on Any of accounts
+
+preconditions:
+->Many persons can register at the same time
+->Many organizations can register at the same time
+->Many Admins can register on the system
+->one admin can sign in same time
