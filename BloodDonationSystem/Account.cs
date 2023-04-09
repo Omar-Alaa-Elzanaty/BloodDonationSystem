@@ -15,7 +15,10 @@ namespace BloodDonationSystem
         {
             return signUpOf.signup(this);
         }
-
+        /// <summary>
+        /// in default way it give full data of organization or person according type of account
+        /// </summary>
+        /// <returns></returns>
         public virtual List<Tuple<string, string>> getdonationhistory()
         {
             if (userName == null || password == null)
@@ -27,7 +30,7 @@ namespace BloodDonationSystem
             List<Tuple<string, string>> list = new List<Tuple<string, string>>();
             if (isPerson == true)
             {  
-                 cmd = new SqlCommand($"select org_name,city from Donation,Organization where pid={id} and orgid=O_id;",
+                 cmd = new SqlCommand($"select distinct org_name,city from Donation,Organization where pid={id} and orgid=O_id;",
                                                 Database.Connection);
                 adapter = new SqlDataAdapter(cmd);
                 dt = new DataTable();
@@ -44,7 +47,7 @@ namespace BloodDonationSystem
             }
             else
             {
-                cmd = new SqlCommand($"select fname,lname from Donation,person where orgid={id} and p_id=pid;",
+                cmd = new SqlCommand($"select distinct fname,lname from Donation,person where orgid={id} and p_id=pid;",
                                                Database.Connection);
                 adapter = new SqlDataAdapter(cmd);
                 dt = new DataTable();
@@ -52,8 +55,8 @@ namespace BloodDonationSystem
                 string firstName, lastName;
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    firstName = dt.Rows[i]["org_name"].ToString();
-                    lastName = dt.Rows[i]["city"].ToString();
+                    firstName = dt.Rows[i]["fname"].ToString();
+                    lastName = dt.Rows[i]["lname"].ToString();
                     list.Add(new Tuple<string, string>(firstName, lastName));
                 }
                 Database.Connection.Close();
