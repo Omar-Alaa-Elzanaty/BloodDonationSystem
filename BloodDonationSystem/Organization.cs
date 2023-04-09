@@ -24,7 +24,7 @@ namespace BloodDonationSystem
             //implement startgy pattern
         }
 
-        public override List<KeyValuePair<string, string>> getdonationhistory()
+        public override List<Tuple<string, string>> getdonationhistory()
         {
             return null;
         }

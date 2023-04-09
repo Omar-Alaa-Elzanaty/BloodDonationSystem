@@ -16,16 +16,15 @@ create table Person(
 p_id int primary key,
 fname varchar(10),
 lname varchar(10),
-email varchar(10) unique,
+email varchar(30) unique,
 bloodtype char(2) check(bloodtype in('A+','A-','B+','B-','O+','O-','AB+','AB-'))
 constraint fk_pid foreign key (p_id) references Account(acc_id)
 )
-
 create table Organization(
 O_id int primary key,
-org_name varchar(10) unique,
+org_name varchar(30) unique,
 contactnum varchar(13),
-city varchar(10)
+city varchar(30)
 constraint fk_oid foreign key (O_id) references Account(acc_id)
 )
 Go

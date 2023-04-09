@@ -26,7 +26,7 @@ namespace BloodDonationSystem
             return null;
         }
 
-        public override List<KeyValuePair<string, string>> getdonationhistory()
+        public override List<Tuple<string, string>> getdonationhistory()
         {
             return null;
         }

@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 namespace BloodDonationSystem
 {
     public partial class Form1 : Form
@@ -14,8 +17,25 @@ namespace BloodDonationSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Account x = new Person();
-            x.runsignup();
+            int id = 3;
+            Database.Connection.Open();
+            SqlCommand cmd;
+            SqlDataAdapter adapter;
+            DataTable dt;
+            List<Tuple<string, string>> list = new List<Tuple<string, string>>();
+            cmd = new SqlCommand($"select fname,lname from Donation,person where orgid={id} and p_id=pid;",
+                                              Database.Connection);
+            adapter = new SqlDataAdapter(cmd);
+            dt = new DataTable();
+            adapter.Fill(dt);
+            string firstName, lastName;
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                firstName = dt.Rows[i]["fname"].ToString();
+                lastName = dt.Rows[i]["lname"].ToString();
+                list.Add(new Tuple<string, string>(firstName, lastName));
+            }
+            Database.Connection.Close();
         }
     }
 }

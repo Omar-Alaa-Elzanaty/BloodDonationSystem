@@ -30,3 +30,4 @@ preconditions:
 ->Many organizations can register at the same time
 ->Many Admins can register on the system
 ->one admin can sign in same time
+->no one can donate more than 1 time in same day
