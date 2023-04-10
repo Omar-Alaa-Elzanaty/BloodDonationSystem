@@ -11,6 +11,36 @@ namespace BloodDonationSystem
         protected string password = null;
         protected bool isPerson = false;
         protected Signupoperation signUpOf;
+        public int ID => id;
+        public string UserName => userName;
+        public string Password => password;
+        public bool IsPerson => isPerson;
+        public Account()
+        {
+            
+        }
+        public Account(int id, string userName, string password, string isPerson)
+        {
+            this.id = id;
+            this.userName = userName;
+            this.password = password;
+            if (isPerson == "T" || isPerson == "t")
+            {
+                this.isPerson = true;
+            }
+            else
+            {
+                this.isPerson = false;
+            }
+        }
+        public Account(Account user)
+        {
+            this.id= user.id;
+            this.userName = user.userName;
+            this.password = user.password;
+            this.isPerson = user.isPerson;
+            this.isPerson= user.isPerson;
+        }
         public bool runsignup()
         {
             return signUpOf.signup(this);

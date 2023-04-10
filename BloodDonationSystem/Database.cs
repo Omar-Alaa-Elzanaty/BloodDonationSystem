@@ -9,6 +9,7 @@ namespace BloodDonationSystem
 {
     static internal class Database
     {
-        public static SqlConnection Connection => new SqlConnection("Data Source=.;Initial Catalog=BloodDonationsystemdb;Integrated Security=True");
+        static SqlConnection connection = new SqlConnection("Data Source=.;Initial Catalog=BloodDonationsystemdb;Integrated Security=True");
+        public static SqlConnection Connection =>connection;
     }
 }

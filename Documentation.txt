@@ -31,3 +31,7 @@ preconditions:
 ->Many Admins can register on the system
 ->one admin can sign in same time
 ->no one can donate more than 1 time in same day
+
+
+Notes: i don't make startegy pattern to login as login auto detect type of account by username and pass but sign up
+ 	user should detect type of account.
