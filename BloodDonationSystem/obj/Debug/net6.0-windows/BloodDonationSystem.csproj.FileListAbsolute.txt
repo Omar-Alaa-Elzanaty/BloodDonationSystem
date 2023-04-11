@@ -24,3 +24,4 @@ D:\c#\BloodDonationSystem\BloodDonationSystem\bin\Debug\net6.0-windows\runtimes\
 D:\c#\BloodDonationSystem\BloodDonationSystem\obj\Debug\net6.0-windows\BloodDonationSystem.csproj.CopyComplete
 D:\c#\BloodDonationSystem\BloodDonationSystem\bin\Debug\net6.0-windows\Microsoft.Data.Sqlite.dll
 D:\c#\BloodDonationSystem\BloodDonationSystem\bin\Debug\net6.0-windows\SQLitePCLRaw.core.dll
+D:\c#\BloodDonationSystem\BloodDonationSystem\obj\Debug\net6.0-windows\BloodDonationSystem.Form2.resources

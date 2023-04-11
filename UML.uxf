@@ -28,8 +28,8 @@ fontsize=18
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>360</x>
-      <y>369</y>
+      <x>441</x>
+      <y>351</y>
       <w>639</w>
       <h>198</h>
     </coordinates>
@@ -49,8 +49,8 @@ fontsize=18
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>756</x>
-      <y>54</y>
+      <x>837</x>
+      <y>36</y>
       <w>504</w>
       <h>216</h>
     </coordinates>
@@ -72,22 +72,22 @@ fontsize=18
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>81</x>
-      <y>630</y>
-      <w>504</w>
+      <x>234</x>
+      <y>594</y>
+      <w>387</w>
       <h>99</h>
     </coordinates>
     <panel_attributes>Donation (static)
 -
 +organizationlist(): Dictonar&lt;string,int&gt;
-+recordprocess(personId:int ,orgnaizationId:int ,personName: string,organizationName: string): void</panel_attributes>
++recordprocess(personId:int ,orgnaizationId:int): void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1008</x>
-      <y>369</y>
+      <x>1089</x>
+      <y>351</y>
       <w>531</w>
       <h>198</h>
     </coordinates>
@@ -106,19 +106,19 @@ fontsize=18
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>693</x>
-      <y>261</y>
-      <w>324</w>
+      <x>774</x>
+      <y>243</y>
+      <w>279</w>
       <h>126</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>340.0;10.0;10.0;120.0</additional_attributes>
+    <additional_attributes>290.0;10.0;10.0;120.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1017</x>
-      <y>261</y>
+      <x>1098</x>
+      <y>243</y>
       <w>234</w>
       <h>126</h>
     </coordinates>
@@ -128,8 +128,8 @@ fontsize=18
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>711</x>
-      <y>621</y>
+      <x>999</x>
+      <y>603</y>
       <w>396</w>
       <h>117</h>
     </coordinates>
@@ -143,8 +143,8 @@ fontsize=18
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>153</x>
-      <y>54</y>
+      <x>234</x>
+      <y>36</y>
       <w>234</w>
       <h>108</h>
     </coordinates>
@@ -157,8 +157,8 @@ signup(account: Account): bool
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>279</x>
-      <y>270</y>
+      <x>360</x>
+      <y>252</y>
       <w>234</w>
       <h>63</h>
     </coordinates>
@@ -171,8 +171,8 @@ signup(account: Account): bool
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>27</x>
-      <y>270</y>
+      <x>108</x>
+      <y>252</y>
       <w>225</w>
       <h>63</h>
     </coordinates>
@@ -184,8 +184,8 @@ signup(account Account): bool</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>144</x>
-      <y>153</y>
+      <x>225</x>
+      <y>135</y>
       <w>126</w>
       <h>135</h>
     </coordinates>
@@ -195,8 +195,8 @@ signup(account Account): bool</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>261</x>
-      <y>153</y>
+      <x>342</x>
+      <y>135</y>
       <w>126</w>
       <h>135</h>
     </coordinates>
@@ -206,8 +206,8 @@ signup(account Account): bool</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>378</x>
-      <y>90</y>
+      <x>459</x>
+      <y>72</y>
       <w>396</w>
       <h>27</h>
     </coordinates>
@@ -217,9 +217,9 @@ signup(account Account): bool</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>405</y>
-      <w>333</w>
+      <x>189</x>
+      <y>756</y>
+      <w>279</w>
       <h>99</h>
     </coordinates>
     <panel_attributes>Database
@@ -230,8 +230,8 @@ Connection: static SqlConnection  P</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>540</x>
-      <y>783</y>
+      <x>819</x>
+      <y>774</y>
       <w>333</w>
       <h>99</h>
     </coordinates>
@@ -243,8 +243,8 @@ Connection: static SqlConnection  P</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>936</x>
-      <y>783</y>
+      <x>1242</x>
+      <y>774</y>
       <w>297</w>
       <h>99</h>
     </coordinates>

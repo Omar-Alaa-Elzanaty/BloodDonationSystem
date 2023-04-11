@@ -35,7 +35,7 @@ create table Donation(
 pid int,
 orgid int,
 dateofdonation date default getdate(),
-constraint pk primary key (pid,orgid,dateofdonation),
+constraint pk primary key (pid,dateofdonation),
 constraint fkpid foreign key(pid) references Person(p_id),
 constraint fkorg foreign key(orgid) references Organization(O_id)
 )
