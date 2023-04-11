@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -46,16 +49,34 @@ namespace BloodDonationSystem
         }
         public Person(int id)
         {
+            signUpOf= new Personsignup();
             //implement startgy pattern
         }
-        public string donate(int organizationid)
+        public void donate(int organizationid,string organizationName)
         {
-            return null;
+            Donation.recordprocess(this.id,organizationid,this.firstName+' '+this.lastName,organizationName);
         }
 
         public override List<Tuple<string, string>> getdonationhistory()
         {
-            return null;
+            try
+            {
+                SqlCommand cmd = new SqlCommand($"select org_name, dateofdonation from Organization, Donation where pid = {this.id} and orgid = O_id;",
+                                               Database.Connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                List<Tuple<string, string>> PersonHistory=new List<Tuple<string, string>>();
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    PersonHistory.Add( new Tuple<string,string>(dt.Rows[i]["org_name"].ToString(), dt.Rows[i]["dateofdonation"].ToString()));
+                }
+                return PersonHistory;
+            }
+            catch
+            {
+                return null;
+            }
         }
     }
 }

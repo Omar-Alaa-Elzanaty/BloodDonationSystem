@@ -13,7 +13,7 @@ namespace BloodDonationSystem
             return null;
         }
 
-        public static void recordprocess(string personName,string organizationName)
+        public static void recordprocess(int personId,int organizationId,string personName,string organizationName)
         {
             return;
         }

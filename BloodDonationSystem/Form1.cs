@@ -23,7 +23,17 @@ namespace BloodDonationSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            int id = 2;
+            SqlCommand cmd = new SqlCommand($"select org_name, dateofdonation from Organization, Donation where pid = {id} and orgid = O_id;",
+                               Database.Connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            for(int i=0;i<dt.Rows.Count;i++)
+            {
+                var x = dt.Rows[i]["org_name"].ToString();
+                var y = dt.Rows[i]["dateofdonation"].ToString();
+            }
         }
     }
 }
