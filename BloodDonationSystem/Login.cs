@@ -25,11 +25,11 @@ namespace BloodDonationSystem
 
                 if (user.IsPerson == true)
                 {
-                    return Loginasperson.createpersonaluseraccount(user);
+                    return Loginasperson.accountbuilder(user);
                 }
                 else
                 {
-                    return Loginasorganization.createorganizationaccount(user);
+                    return Loginasorganization.accountbuilder(user);
                 }
             }
             Database.Connection.Close();

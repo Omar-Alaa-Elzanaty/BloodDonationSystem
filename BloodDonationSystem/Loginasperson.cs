@@ -10,7 +10,7 @@ namespace BloodDonationSystem
 {
     internal static class Loginasperson
     { 
-        public static Person createpersonaluseraccount(Account user)
+        public static Person accountbuilder(Account user)
         {
             Database.Connection.Open();
             SqlDataAdapter rowInfo = new SqlDataAdapter($"select * from person where p_id='{user.ID}';",Database.Connection); 

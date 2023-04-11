@@ -23,16 +23,15 @@ namespace BloodDonationSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int id = 2;
-            SqlCommand cmd = new SqlCommand($"select org_name, dateofdonation from Organization, Donation where pid = {id} and orgid = O_id;",
-                               Database.Connection);
+            SqlCommand cmd = new SqlCommand($"select bloodtype,count(bloodtype) as amount from Person,Donation where orgid= {3} and pid=p_id group by bloodtype;",
+                                             Database.Connection);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
-            for(int i=0;i<dt.Rows.Count;i++)
+            Dictionary<string, int> bloodReport = new Dictionary<string, int>();
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
-                var x = dt.Rows[i]["org_name"].ToString();
-                var y = dt.Rows[i]["dateofdonation"].ToString();
+                bloodReport.Add(dt.Rows[i]["bloodtype"].ToString(), int.Parse(dt.Rows[i]["amount"].ToString()));
             }
         }
     }

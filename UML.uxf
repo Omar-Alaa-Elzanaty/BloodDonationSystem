@@ -28,10 +28,10 @@ fontsize=18
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>432</x>
-      <y>351</y>
-      <w>558</w>
-      <h>180</h>
+      <x>360</x>
+      <y>369</y>
+      <w>639</w>
+      <h>198</h>
     </coordinates>
     <panel_attributes>Person
 -
@@ -41,7 +41,7 @@ fontsize=18
 -bloodtype: string
 -
 +Person(firstName:string,lastName:string,email:string,bloodtype:string): void
-+Person(id: int)
++Person(user: Account,firstName: string,lastName: string,email: string,bloodType:string)
 +donate(organizationId: int): string
 +donationhistory(): List&lt;pair&lt;string,Date&gt; &gt;</panel_attributes>
     <additional_attributes/>
@@ -49,8 +49,8 @@ fontsize=18
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>774</x>
-      <y>36</y>
+      <x>756</x>
+      <y>54</y>
       <w>504</w>
       <h>216</h>
     </coordinates>
@@ -72,8 +72,8 @@ fontsize=18
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>99</x>
-      <y>612</y>
+      <x>81</x>
+      <y>630</y>
       <w>504</w>
       <h>99</h>
     </coordinates>
@@ -86,10 +86,10 @@ fontsize=18
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1026</x>
-      <y>351</y>
-      <w>450</w>
-      <h>180</h>
+      <x>1008</x>
+      <y>369</y>
+      <w>531</w>
+      <h>198</h>
     </coordinates>
     <panel_attributes>Organization
 -
@@ -98,7 +98,7 @@ fontsize=18
 -city: string
 -
 +Organization(name: string,contactName:string,city string)
-+Organziation(id int)
++Organization(user: Account,name: string,contactName:string,city string)
 +donationhisotry(): List&lt;pair&lt;string,string&gt; &gt;
 +bloodamountreport(): Dictinoary&lt;string,int&gt;</panel_attributes>
     <additional_attributes/>
@@ -106,8 +106,8 @@ fontsize=18
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>711</x>
-      <y>243</y>
+      <x>693</x>
+      <y>261</y>
       <w>324</w>
       <h>126</h>
     </coordinates>
@@ -117,8 +117,8 @@ fontsize=18
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1035</x>
-      <y>243</y>
+      <x>1017</x>
+      <y>261</y>
       <w>234</w>
       <h>126</h>
     </coordinates>
@@ -128,8 +128,8 @@ fontsize=18
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>729</x>
-      <y>603</y>
+      <x>711</x>
+      <y>621</y>
       <w>396</w>
       <h>117</h>
     </coordinates>
@@ -143,8 +143,8 @@ fontsize=18
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>171</x>
-      <y>36</y>
+      <x>153</x>
+      <y>54</y>
       <w>234</w>
       <h>108</h>
     </coordinates>
@@ -157,8 +157,8 @@ signup(account: Account): bool
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>297</x>
-      <y>252</y>
+      <x>279</x>
+      <y>270</y>
       <w>234</w>
       <h>63</h>
     </coordinates>
@@ -171,8 +171,8 @@ signup(account: Account): bool
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>45</x>
-      <y>252</y>
+      <x>27</x>
+      <y>270</y>
       <w>225</w>
       <h>63</h>
     </coordinates>
@@ -184,8 +184,8 @@ signup(account Account): bool</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>162</x>
-      <y>135</y>
+      <x>144</x>
+      <y>153</y>
       <w>126</w>
       <h>135</h>
     </coordinates>
@@ -195,8 +195,8 @@ signup(account Account): bool</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>279</x>
-      <y>135</y>
+      <x>261</x>
+      <y>153</y>
       <w>126</w>
       <h>135</h>
     </coordinates>
@@ -206,8 +206,8 @@ signup(account Account): bool</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
-      <y>72</y>
+      <x>378</x>
+      <y>90</y>
       <w>396</w>
       <h>27</h>
     </coordinates>
@@ -217,8 +217,8 @@ signup(account Account): bool</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>18</x>
-      <y>387</y>
+      <x>0</x>
+      <y>405</y>
       <w>333</w>
       <h>99</h>
     </coordinates>
@@ -230,27 +230,27 @@ Connection: static SqlConnection  P</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>630</x>
-      <y>738</y>
-      <w>306</w>
+      <x>540</x>
+      <y>783</y>
+      <w>333</w>
       <h>99</h>
     </coordinates>
     <panel_attributes>Loginasorganization
 -
-+createorganizationacount():Organization</panel_attributes>
++accountbuilder(user: Account):Organization</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>954</x>
-      <y>738</y>
-      <w>279</w>
+      <x>936</x>
+      <y>783</y>
+      <w>297</w>
       <h>99</h>
     </coordinates>
     <panel_attributes>Loginasperson
 -
-+createpersonaluseraccount():Person</panel_attributes>
++accountbuilder(user: Account):Person</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

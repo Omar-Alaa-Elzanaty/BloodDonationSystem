@@ -5,7 +5,7 @@ namespace BloodDonationSystem
 {
     internal static class Loginasorganization
     {
-        public static Organization createorganizationaccount(Account user)
+        public static Organization accountbuilder(Account user)
         {
 
             Database.Connection.Open();

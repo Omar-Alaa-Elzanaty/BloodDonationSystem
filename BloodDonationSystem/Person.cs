@@ -41,22 +41,15 @@ namespace BloodDonationSystem
             this.bloodType = bloodType;
             signUpOf = new Personsignup();
         }
-
         public Person()
         {
             signUpOf = new Personsignup();
-            //implement startgy pattern
-        }
-        public Person(int id)
-        {
-            signUpOf= new Personsignup();
             //implement startgy pattern
         }
         public void donate(int organizationid,string organizationName)
         {
             Donation.recordprocess(this.id,organizationid,this.firstName+' '+this.lastName,organizationName);
         }
-
         public override List<Tuple<string, string>> getdonationhistory()
         {
             try
@@ -71,7 +64,14 @@ namespace BloodDonationSystem
                 {
                     PersonHistory.Add( new Tuple<string,string>(dt.Rows[i]["org_name"].ToString(), dt.Rows[i]["dateofdonation"].ToString()));
                 }
-                return PersonHistory;
+                if (PersonHistory.Count > 0)
+                {
+                    return PersonHistory;
+                }
+                else
+                {
+                    return null;
+                }
             }
             catch
             {
