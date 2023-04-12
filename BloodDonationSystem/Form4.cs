@@ -10,15 +10,19 @@ using System.Windows.Forms;
 
 namespace BloodDonationSystem
 {
-    public partial class Form2 : Form
+    public partial class Form4 : Form
     {
-        public Form2()
+        public Form4()
         {
             InitializeComponent();
-            comboBox1.DataSource=new List<string>() { "O+", "O-", "A+", "A-", "B+", "B-", "AB+", "AB-" };
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

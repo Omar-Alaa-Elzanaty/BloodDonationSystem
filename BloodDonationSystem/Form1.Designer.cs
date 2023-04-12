@@ -1,11 +1,11 @@
 ﻿namespace BloodDonationSystem
 {
-    partial class Form1
+    partial class form1
     {
         /// <summary>
         ///  Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private global::System.ComponentModel.IContainer components = null;
 
         /// <summary>
         ///  Clean up any resources being used.
@@ -36,6 +36,8 @@
             label4 = new Label();
             label3 = new Label();
             button1 = new Button();
+            button4 = new Button();
+            label5 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -53,12 +55,13 @@
             // 
             button2.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.HotTrack;
-            button2.Location = new Point(251, 268);
+            button2.Location = new Point(251, 257);
             button2.Name = "button2";
             button2.Size = new Size(236, 77);
             button2.TabIndex = 2;
             button2.Text = "Login";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // textBox1
             // 
@@ -98,7 +101,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(12, 408);
+            label3.Location = new Point(6, 399);
             label3.Name = "label3";
             label3.Size = new Size(240, 28);
             label3.TabIndex = 8;
@@ -108,19 +111,43 @@
             // 
             button1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.MenuHighlight;
-            button1.Location = new Point(258, 403);
+            button1.Location = new Point(270, 396);
             button1.Name = "button1";
-            button1.Size = new Size(147, 39);
+            button1.Size = new Size(217, 39);
             button1.TabIndex = 9;
-            button1.Text = "signup";
+            button1.Text = "sign up as person";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // Form1
+            // button4
+            // 
+            button4.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.ForeColor = SystemColors.MenuHighlight;
+            button4.Location = new Point(539, 396);
+            button4.Name = "button4";
+            button4.Size = new Size(242, 38);
+            button4.TabIndex = 11;
+            button4.Text = "sign up as organization";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(496, 400);
+            label5.Name = "label5";
+            label5.Size = new Size(32, 28);
+            label5.TabIndex = 12;
+            label5.Text = "or";
+            // 
+            // form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Info;
             ClientSize = new Size(793, 450);
+            Controls.Add(label5);
+            Controls.Add(button4);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label4);
@@ -129,7 +156,7 @@
             Controls.Add(textBox1);
             Controls.Add(button2);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "form1";
             Text = "Login";
             Load += Form1_Load;
             ResumeLayout(false);
@@ -145,5 +172,7 @@
         private Label label4;
         private Label label3;
         private Button button1;
+        private Button button4;
+        private Label label5;
     }
 }

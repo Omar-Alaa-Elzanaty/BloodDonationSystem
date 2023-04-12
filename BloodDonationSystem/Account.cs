@@ -7,8 +7,8 @@ namespace BloodDonationSystem
     public class Account
     {
         protected int id = -1;
-        protected string userName = null;
-        protected string password = null;
+        protected string userName;
+        protected string password;
         protected bool isPerson = false;
         protected Signupoperation signUpOf;
         public int ID => id;
