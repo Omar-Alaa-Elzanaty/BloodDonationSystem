@@ -12,7 +12,10 @@ namespace BloodDonationSystem
     {
         public bool signup(Account account)
         {
-            account = Login.createuser(account.UserName, account.Password);
+            if (Login.createuser(account.UserName, account.Password) != null)
+            {
+                return false;
+            }
             if(account is Person man)
             {
                 SqlCommand conn = new SqlCommand("insert into Account values(@user,@pass,'t');declare @x int= @@IDENTITY;insert into Person values(@x,@fn,@ln,@email,@blood);", Database.Connection);

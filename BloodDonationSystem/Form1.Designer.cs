@@ -1,6 +1,6 @@
 ﻿namespace BloodDonationSystem
 {
-    partial class form1
+    partial class Form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -140,7 +140,7 @@
             label5.TabIndex = 12;
             label5.Text = "or";
             // 
-            // form1
+            // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -156,7 +156,7 @@
             Controls.Add(textBox1);
             Controls.Add(button2);
             Controls.Add(label1);
-            Name = "form1";
+            Name = "Form1";
             Text = "Login";
             Load += Form1_Load;
             ResumeLayout(false);

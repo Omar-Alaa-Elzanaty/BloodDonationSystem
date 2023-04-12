@@ -18,9 +18,8 @@ namespace BloodDonationSystem
         public string ContactNum  => contactNum;
         public string City  => city; 
 
-        public Organization(int id,string user,string pass, string name, string contactNum, string city)
+        public Organization(string user,string pass, string name, string contactNum, string city)
         {
-            this.id = id;
             this.userName = user;
             this.password = pass;
             this.isPerson = false;

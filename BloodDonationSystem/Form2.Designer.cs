@@ -39,13 +39,14 @@
             label5 = new Label();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
-            textBox6 = new TextBox();
+            textBox5 = new TextBox();
             comboBox1 = new ComboBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(487, 100);
+            textBox4.Location = new Point(487, 188);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(162, 23);
             textBox4.TabIndex = 26;
@@ -127,7 +128,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.ActiveCaptionText;
-            label5.Location = new Point(487, 267);
+            label5.Location = new Point(480, 267);
             label5.Name = "label5";
             label5.Size = new Size(84, 21);
             label5.TabIndex = 39;
@@ -135,24 +136,24 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(142, 188);
+            textBox2.Location = new Point(487, 100);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(162, 23);
             textBox2.TabIndex = 40;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(487, 188);
+            textBox3.Location = new Point(142, 188);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(162, 23);
             textBox3.TabIndex = 41;
             // 
-            // textBox6
+            // textBox5
             // 
-            textBox6.Location = new Point(142, 291);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(162, 23);
-            textBox6.TabIndex = 43;
+            textBox5.Location = new Point(142, 291);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(162, 23);
+            textBox5.TabIndex = 43;
             // 
             // comboBox1
             // 
@@ -162,13 +163,26 @@
             comboBox1.Size = new Size(162, 23);
             comboBox1.TabIndex = 44;
             // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.MenuHighlight;
+            button1.Location = new Point(295, 355);
+            button1.Name = "button1";
+            button1.Size = new Size(188, 56);
+            button1.TabIndex = 45;
+            button1.Text = "Sign up";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(comboBox1);
-            Controls.Add(textBox6);
+            Controls.Add(textBox5);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(label5);
@@ -200,7 +214,8 @@
         private Label label5;
         private TextBox textBox2;
         private TextBox textBox3;
-        private TextBox textBox6;
+        private TextBox textBox5;
         private ComboBox comboBox1;
+        private Button button1;
     }
 }

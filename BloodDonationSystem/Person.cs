@@ -21,9 +21,8 @@ namespace BloodDonationSystem
         public string Email => email;
         public string BloodType => bloodType;
 
-        public Person(int id,string user,string pass, string firstName, string lastName, string email, string bloodType)
+        public Person(string user,string pass, string firstName, string lastName, string email, string bloodType)
         {
-            this.id = id;
             this.userName = user;
             this.password = pass;
             this.isPerson = true;

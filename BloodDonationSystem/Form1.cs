@@ -9,9 +9,9 @@ using System.Drawing;
 
 namespace BloodDonationSystem
 {
-    public partial class form1 : Form
+    public partial class Form1 : Form
     {
-        public form1()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -29,10 +29,13 @@ namespace BloodDonationSystem
                 this.Visible = false;
                 Form2 form2 = new Form2();
                 form2.Show();
+                this.Visible = true;
             }
             else if (user is Organization)
             {
-
+                this.Visible = false;
+                Form3 form3 = new Form3();
+                form3.Show();
             }
             else
             {
