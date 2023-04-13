@@ -13,6 +13,7 @@ namespace BloodDonationSystem
 {
     public partial class Form4 : Form
     {
+        //Person 
         Person user;
         public Form4(Person user)
         {
@@ -67,12 +68,14 @@ namespace BloodDonationSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            Form1 form1 = new Form1();
+            form1.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(user.FirstName+' '+user.LastName+'\n'+user.Email+'\n'+user.BloodType);
+            MessageBox.Show(user.FirstName + ' ' + user.LastName + '\n' + user.Email + '\n' + user.BloodType);
         }
     }
 }

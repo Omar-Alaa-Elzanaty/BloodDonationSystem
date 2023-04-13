@@ -17,8 +17,8 @@ namespace BloodDonationSystem
             }
             if (account is Organization Bloodbank)
             {
-                SqlCommand conn = new SqlCommand("insert into Account values(@user,@pass,'t');declare @x int= @@IDENTITY;insert into Person values(@x,@name,@contact,@city,);", Database.Connection);
-                conn.Parameters.AddWithValue("@user", Bloodbank.ID);
+                SqlCommand conn = new SqlCommand("insert into Account values(@user,@pass,'f');declare @id int;select @id=acc_id from Account where username=@user;select @id;insert into Person values(@id,@name,@contact,@city,);", Database.Connection);
+                conn.Parameters.AddWithValue("@user", Bloodbank.UserName);
                 conn.Parameters.AddWithValue("@pass", Bloodbank.Password);
                 conn.Parameters.AddWithValue("@name", Bloodbank.Name);
                 conn.Parameters.AddWithValue("@contact", Bloodbank.ContactNum);
@@ -30,8 +30,10 @@ namespace BloodDonationSystem
                 }
                 catch
                 {
+                    Database.Connection.Close();
                     return false;
                 }
+                Database.Connection.Close();
                 return true;
             }
             return false;

@@ -35,6 +35,7 @@
             label1 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // listView1
@@ -50,17 +51,19 @@
             // 
             // ID
             // 
+            ID.Text = "ID";
             ID.Width = 200;
             // 
             // Organization
             // 
+            Organization.Text = "Organization";
             Organization.TextAlign = HorizontalAlignment.Center;
             Organization.Width = 200;
             // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(425, 385);
+            button1.Location = new Point(351, 385);
             button1.Name = "button1";
             button1.Size = new Size(152, 44);
             button1.TabIndex = 1;
@@ -72,7 +75,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(99, 396);
+            label1.Location = new Point(12, 396);
             label1.Name = "label1";
             label1.Size = new Size(150, 28);
             label1.TabIndex = 2;
@@ -80,9 +83,9 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(255, 401);
+            textBox1.Location = new Point(180, 401);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(146, 23);
+            textBox1.Size = new Size(144, 23);
             textBox1.TabIndex = 3;
             // 
             // label2
@@ -95,11 +98,23 @@
             label2.TabIndex = 4;
             label2.Text = "Help other by your Donation";
             // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.Location = new Point(636, 385);
+            button2.Name = "button2";
+            button2.Size = new Size(152, 44);
+            button2.TabIndex = 5;
+            button2.Text = "Back";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form6
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(label1);
@@ -121,5 +136,6 @@
         private Label label1;
         private TextBox textBox1;
         private Label label2;
+        private Button button2;
     }
 }

@@ -52,8 +52,13 @@ namespace BloodDonationSystem
         private void button4_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            Form3 form3= new Form3();
+            Form3 form3 = new Form3();
             form3.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

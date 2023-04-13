@@ -38,6 +38,7 @@
             button1 = new Button();
             button4 = new Button();
             label5 = new Label();
+            button3 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -55,9 +56,9 @@
             // 
             button2.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.HotTrack;
-            button2.Location = new Point(251, 257);
+            button2.Location = new Point(251, 245);
             button2.Name = "button2";
-            button2.Size = new Size(236, 77);
+            button2.Size = new Size(236, 52);
             button2.TabIndex = 2;
             button2.Text = "Login";
             button2.UseVisualStyleBackColor = true;
@@ -141,12 +142,25 @@
             label5.TabIndex = 12;
             label5.Text = "or";
             // 
+            // button3
+            // 
+            button3.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = SystemColors.HotTrack;
+            button3.Location = new Point(251, 314);
+            button3.Name = "button3";
+            button3.Size = new Size(236, 43);
+            button3.TabIndex = 13;
+            button3.Text = "Exit";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Info;
             ClientSize = new Size(793, 450);
+            Controls.Add(button3);
             Controls.Add(label5);
             Controls.Add(button4);
             Controls.Add(button1);
@@ -175,5 +189,6 @@
         private Button button1;
         private Button button4;
         private Label label5;
+        private Button button3;
     }
 }

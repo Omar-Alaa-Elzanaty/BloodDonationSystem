@@ -35,8 +35,8 @@ namespace BloodDonationSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int? id=int.Parse(textBox1.Text);
-            if (id!=null)
+            int? id = int.Parse(textBox1.Text);
+            if (id != null)
             {
                 this.user.donate(int.Parse(textBox1.Text));
             }
@@ -44,6 +44,13 @@ namespace BloodDonationSystem
             {
                 MessageBox.Show("Please enter vaild Organziation ID");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Form4 form4 = new Form4(user);
+            form4.Show();
         }
     }
 }

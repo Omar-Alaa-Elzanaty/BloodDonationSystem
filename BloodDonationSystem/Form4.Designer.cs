@@ -40,9 +40,9 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(12, 439);
+            button1.Location = new Point(544, 202);
             button1.Name = "button1";
-            button1.Size = new Size(134, 51);
+            button1.Size = new Size(199, 51);
             button1.TabIndex = 0;
             button1.Text = "Donate";
             button1.UseVisualStyleBackColor = true;
@@ -51,9 +51,9 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Location = new Point(12, 338);
+            button2.Location = new Point(544, 87);
             button2.Name = "button2";
-            button2.Size = new Size(134, 51);
+            button2.Size = new Size(199, 51);
             button2.TabIndex = 1;
             button2.Text = "Profile";
             button2.UseVisualStyleBackColor = true;
@@ -62,7 +62,7 @@
             // button3
             // 
             button3.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            button3.Location = new Point(387, 147);
+            button3.Location = new Point(134, 318);
             button3.Name = "button3";
             button3.Size = new Size(134, 51);
             button3.TabIndex = 2;
@@ -73,9 +73,9 @@
             // button4
             // 
             button4.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            button4.Location = new Point(567, 407);
+            button4.Location = new Point(302, 411);
             button4.Name = "button4";
-            button4.Size = new Size(164, 83);
+            button4.Size = new Size(219, 67);
             button4.TabIndex = 4;
             button4.Text = "Logout";
             button4.UseVisualStyleBackColor = true;
@@ -84,9 +84,9 @@
             // listView1
             // 
             listView1.Columns.AddRange(new ColumnHeader[] { organization, Date });
-            listView1.Location = new Point(12, 67);
+            listView1.Location = new Point(26, 39);
             listView1.Name = "listView1";
-            listView1.Size = new Size(356, 229);
+            listView1.Size = new Size(356, 261);
             listView1.TabIndex = 6;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;

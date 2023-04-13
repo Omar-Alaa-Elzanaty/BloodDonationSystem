@@ -18,22 +18,24 @@ namespace BloodDonationSystem
             }
             if(account is Person man)
             {
-                SqlCommand conn = new SqlCommand("insert into Account values(@user,@pass,'t');declare @x int= @@IDENTITY;insert into Person values(@x,@fn,@ln,@email,@blood);", Database.Connection);
-                conn.Parameters.AddWithValue("@user", man.UserName);
-                conn.Parameters.AddWithValue("@pass", man.Password);
-                conn.Parameters.AddWithValue("@fn", man.FirstName);
-                conn.Parameters.AddWithValue("@ln", man.Email);
-                conn.Parameters.AddWithValue("@email", man.Email);
-                conn.Parameters.AddWithValue("@blood", man.BloodType);
-                Database.Connection.Open();
                 try
                 {
+                    SqlCommand conn = new SqlCommand("insert into Account values(@user,@pass,'t');declare @id int;select @id=acc_id from Account where username=@user;select @id;insert into Person values(@id,@fn,@ln,@email,@blood);", Database.Connection);
+                    conn.Parameters.AddWithValue("@user", man.UserName);
+                    conn.Parameters.AddWithValue("@pass", man.Password);
+                    conn.Parameters.AddWithValue("@fn", man.FirstName);
+                    conn.Parameters.AddWithValue("@ln", man.LastName);
+                    conn.Parameters.AddWithValue("@email", man.Email);
+                    conn.Parameters.AddWithValue("@blood", man.BloodType);
+                    Database.Connection.Open();
                     conn.ExecuteNonQuery();
                 }
                 catch
                 {
+                    Database.Connection.Close();
                     return false;
                 }
+                Database.Connection.Close();
                 return true;
             }
             return false;
