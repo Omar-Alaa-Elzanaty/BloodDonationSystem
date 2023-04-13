@@ -28,3 +28,4 @@ D:\c#\BloodDonationSystem\BloodDonationSystem\obj\Debug\net6.0-windows\BloodDona
 D:\c#\BloodDonationSystem\BloodDonationSystem\obj\Debug\net6.0-windows\BloodDonationSystem.Form4.resources
 D:\c#\BloodDonationSystem\BloodDonationSystem\obj\Debug\net6.0-windows\BloodDonationSystem.Form5.resources
 D:\c#\BloodDonationSystem\BloodDonationSystem\obj\Debug\net6.0-windows\BloodDonationSystem.Form2.resources
+D:\c#\BloodDonationSystem\BloodDonationSystem\obj\Debug\net6.0-windows\BloodDonationSystem.Form6.resources

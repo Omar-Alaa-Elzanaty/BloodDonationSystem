@@ -52,17 +52,18 @@
             button1.TabIndex = 20;
             button1.Text = "Sign up";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(125, 167);
+            textBox3.Location = new Point(130, 240);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(162, 23);
             textBox3.TabIndex = 18;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(125, 240);
+            textBox2.Location = new Point(125, 166);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(162, 23);
             textBox2.TabIndex = 17;
@@ -142,9 +143,9 @@
             label6.ForeColor = SystemColors.ActiveCaptionText;
             label6.Location = new Point(128, 362);
             label6.Name = "label6";
-            label6.Size = new Size(119, 21);
+            label6.Size = new Size(34, 21);
             label6.TabIndex = 26;
-            label6.Text = "contact number";
+            label6.Text = "city";
             // 
             // textBox5
             // 

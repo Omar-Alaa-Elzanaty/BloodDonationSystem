@@ -12,9 +12,11 @@ namespace BloodDonationSystem
 {
     public partial class Form5 : Form
     {
-        public Form5()
+        Organization user;
+        public Form5(Organization user)
         {
             InitializeComponent();
+            this.user = user;
         }
 
         private void button2_Click(object sender, EventArgs e)

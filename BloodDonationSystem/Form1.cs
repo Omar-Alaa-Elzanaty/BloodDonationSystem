@@ -27,15 +27,14 @@ namespace BloodDonationSystem
             if (user is Person)
             {
                 this.Visible = false;
-                Form2 form2 = new Form2();
-                form2.Show();
-                this.Visible = true;
+                Form4 form4 = new Form4((Person)user);
+                form4.Show();
             }
             else if (user is Organization)
             {
                 this.Visible = false;
-                Form3 form3 = new Form3();
-                form3.Show();
+                Form5 form5 = new Form5((Organization)user);
+                form5.Show();
             }
             else
             {
@@ -48,6 +47,13 @@ namespace BloodDonationSystem
             this.Visible = false;
             Form2 form2 = new Form2();
             form2.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Form3 form3= new Form3();
+            form3.Show();
         }
     }
 }

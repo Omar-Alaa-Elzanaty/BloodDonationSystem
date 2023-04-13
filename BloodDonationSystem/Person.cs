@@ -49,6 +49,10 @@ namespace BloodDonationSystem
         {
             Donation.recordprocess(this.id,organizationid);
         }
+        /// <summary>
+        /// return list of organizations names and dates of donation
+        /// </summary>
+        /// <returns></returns>
         public override List<Tuple<string, string>> getdonationhistory()
         {
             try
