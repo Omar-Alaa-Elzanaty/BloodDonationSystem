@@ -24,7 +24,7 @@ namespace BloodDonationSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Account person = new Person(textBox1.Text,textBox2.Text,textBox3.Text,textBox4.Text,textBox5.Text,comboBox1.Text);
+            Account person = new Person(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, comboBox1.Text);
             if (person.runsignup() == false)
             {
                 MessageBox.Show("invalid Sign up operation....\n, please try again");

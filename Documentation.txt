@@ -35,3 +35,9 @@ preconditions:
 
 Notes: i don't make startegy pattern to login as login auto detect type of account by username and pass but sign up
  	user should detect type of account.
+
+
+Forms Names : from1: Login page
+	      form2: Signup person page
+	      form3: Signup organization page
+	      form4: Person profile page
