@@ -35,10 +35,12 @@ namespace BloodDonationSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int? id = int.Parse(textBox1.Text);
-            if (id != null)
+            if (int.TryParse(textBox1.Text.ToString(),out int id)&&Donation.Organizationlist().ContainsValue(id)) 
             {
-                this.user.donate(int.Parse(textBox1.Text));
+                MessageBox.Show(this.user.donate(id));
+                this.Visible = false;
+                Form4 form4 = new Form4(user);
+                form4.Show();
             }
             else
             {

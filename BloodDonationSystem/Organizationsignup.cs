@@ -17,7 +17,7 @@ namespace BloodDonationSystem
             }
             if (account is Organization Bloodbank)
             {
-                SqlCommand conn = new SqlCommand("insert into Account values(@user,@pass,'f');declare @id int;select @id=acc_id from Account where username=@user;select @id;insert into Person values(@id,@name,@contact,@city,);", Database.Connection);
+                SqlCommand conn = new SqlCommand("insert into Account values(@user,@pass,'f');declare @id int;select @id=acc_id from Account where username=@user;insert into Organization values(@id,@name,@contact,@city);", Database.Connection);
                 conn.Parameters.AddWithValue("@user", Bloodbank.UserName);
                 conn.Parameters.AddWithValue("@pass", Bloodbank.Password);
                 conn.Parameters.AddWithValue("@name", Bloodbank.Name);

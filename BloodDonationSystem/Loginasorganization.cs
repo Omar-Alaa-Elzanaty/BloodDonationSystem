@@ -13,8 +13,15 @@ namespace BloodDonationSystem
             DataTable personInfo = new DataTable();
             rowInfo.Fill(personInfo);
             Database.Connection.Close();
-            return new Organization(user, personInfo.Rows[0]["org_name"].ToString(),
-                         personInfo.Rows[0]["contactnum"].ToString(), personInfo.Rows[0]["city"].ToString());
+            if (personInfo.Rows.Count > 0)
+            {
+                return new Organization(user, personInfo.Rows[0]["org_name"].ToString(),
+             personInfo.Rows[0]["contactnum"].ToString(), personInfo.Rows[0]["city"].ToString());
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

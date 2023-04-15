@@ -25,14 +25,15 @@ namespace BloodDonationSystem
         private void button1_Click(object sender, EventArgs e)
         {
             Account organization = new Organization(textBox1.Text, textBox2.Text, textBox3.Text,textBox4.Text,textBox5.Text);
-            organization.runsignup();
-            if (organization.runsignup() == false)
+            if (organization.runsignup()==true)
             {
-                MessageBox.Show("invalid Sign up operation....\n, please try again");
+                this.Visible = false;
+                Form1 form1 = new Form1();
+                form1.Show();
+                return;
             }
-            this.Visible = false;
-            Form1 form1 = new Form1();
-            form1.Show();
+            MessageBox.Show("invalid Sign up operation....\n, please try again");
+            
         }
     }
 }

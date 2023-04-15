@@ -45,9 +45,9 @@ namespace BloodDonationSystem
             signUpOf = new Personsignup();
             //implement startgy pattern
         }
-        public void donate(int organizationid)
+        public string donate(int organizationid)
         {
-            Donation.recordprocess(this.id,organizationid);
+            return Donation.recordprocess(this.id,organizationid);
         }
         /// <summary>
         /// return list of organizations names and dates of donation

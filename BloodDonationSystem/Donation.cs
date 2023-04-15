@@ -32,9 +32,23 @@ namespace BloodDonationSystem
             }
         }
 
-        public static void recordprocess(int personId,int organizationId)
+        public static string recordprocess(int personId,int organizationId)
         {
-            SqlCommand cmd = new SqlCommand($"insert into Donation (pid,orgid)values({personId},{organizationId});");
+            try
+            {
+                SqlCommand cmd = new SqlCommand($"insert into Donation (pid,orgid)values(@personId,@organizationId);",Database.Connection);
+                cmd.Parameters.AddWithValue("@personId",personId);
+                cmd.Parameters.AddWithValue("@organizationId",organizationId);
+                Database.Connection.Open();
+                cmd.ExecuteNonQuery();
+                Database.Connection.Close();
+                return "Thanks for Donation";
+            }
+            catch
+            {
+                Database.Connection.Close();
+                return "sorry..,You can't donate more than one in same day";
+            }
         }
     }
 }

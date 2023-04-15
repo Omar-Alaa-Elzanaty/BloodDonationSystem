@@ -42,6 +42,7 @@
             textBox5 = new TextBox();
             comboBox1 = new ComboBox();
             button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // textBox4
@@ -167,7 +168,7 @@
             // 
             button1.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.MenuHighlight;
-            button1.Location = new Point(295, 355);
+            button1.Location = new Point(212, 355);
             button1.Name = "button1";
             button1.Size = new Size(188, 56);
             button1.TabIndex = 45;
@@ -175,11 +176,24 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = SystemColors.MenuHighlight;
+            button2.Location = new Point(461, 355);
+            button2.Name = "button2";
+            button2.Size = new Size(188, 56);
+            button2.TabIndex = 46;
+            button2.Text = "Back";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(comboBox1);
             Controls.Add(textBox5);
@@ -217,5 +231,6 @@
         private TextBox textBox5;
         private ComboBox comboBox1;
         private Button button1;
+        private Button button2;
     }
 }
