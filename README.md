@@ -22,7 +22,7 @@ Admin has permission to Add,Delete,Remove any person or organization on the syst
 - organization :drop_of_blood:
 	-can show it's Donation history
 	-can know amount of diff types of bloods it's has
--  Admin ***not implement open as issue*** :warning:
+- Admin  ***not implement open as issue*** :warning:
 	-can make any of CRUD operations on Any of accounts
 
 ## How can you Contribute?
