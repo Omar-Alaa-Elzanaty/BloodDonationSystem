@@ -20,7 +20,9 @@
 - Design pattern
 - Object orianted programming
 - Open closed principle <sup>(OCP)</sup> 
+
 # System Analysis:
+
 **Blood Donation system was created to connect between the donor and organizations.Any person want to 
 donate can get account on system and donating blood.Any organization can start recieving donations
 by regitser in the system and getreport about all amount and types of bloods it recieve.
@@ -53,7 +55,7 @@ Admin has permission to Add,Delete,Remove any person or organization on the syst
 - **Database Digram:**
 ![DB Digram](https://user-images.githubusercontent.com/94639386/232314375-f0a92946-213f-48ac-9602-72637a3aa908.PNG)
 
-## Contributetion:
+## Contribution:
 - Make your Fork and start your custom edit.
 - I will let some tasks if you like to contribute or training.
 - you can also modify any bugs ~~in case you found one~~.
