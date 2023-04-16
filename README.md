@@ -61,9 +61,7 @@ Admin has permission to Add,Delete,Remove any person or organization on the syst
 - you can also modify any bugs ~~in case you found~~.
 - Open issues and select easiest one to you and start your contribute 
 
-## License
-
-### MIT License
+## MIT License
 
 Copyright (c) [year] [fullname]
 
