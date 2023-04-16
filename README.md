@@ -8,7 +8,7 @@
 
 ## What do you need to run the project?
 - At least .Net6 to can run this project
-- Windows form application pacage
+- Windows form application package 
 - To modify UML Digram you will need to install [Umlet](https://www.umlet.com/).
 - Get Msql 
 - Run file DBcreation.sql 
