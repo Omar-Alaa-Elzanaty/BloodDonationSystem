@@ -47,7 +47,7 @@ Admin has permission to Add,Delete,Remove any person or organization on the syst
 - one admin can sign in same time.
 - no one can donate more than 1 time in the same day.
 
-#system Design:
+# system Design:
 - **UML Classes Digramn:**
 ![UML](https://user-images.githubusercontent.com/94639386/232314106-8b8c37c5-a16b-445e-bb79-74e263415b38.PNG)
  -  Using strategy design pattern with signup.
@@ -58,8 +58,8 @@ Admin has permission to Add,Delete,Remove any person or organization on the syst
 ## Contribution:
 - Make your Fork and start your custom edit.
 - I will let some tasks if you like to contribute or training.
-- you can also modify any bugs ~~in case you found one~~.
-- Open Issues
+- you can also modify any bugs ~~in case you found~~.
+- Open issues and select easiest one to you and start your contribute 
 
 ## License
 
