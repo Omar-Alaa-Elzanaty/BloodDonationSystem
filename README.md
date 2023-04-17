@@ -53,6 +53,7 @@ Admin has permission to Add,Delete,Remove any person or organization on the syst
  -  Using strategy design pattern with signup.
  -  I didn't make startegy pattern to login as login auto detect type of account by username and pass but sign up user should detect type of account.
 - **Database Digram:**
+
 ![DB Digram](https://user-images.githubusercontent.com/94639386/232314375-f0a92946-213f-48ac-9602-72637a3aa908.PNG)
 
 # Contribution:
