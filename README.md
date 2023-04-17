@@ -58,7 +58,7 @@ Admin has permission to Add,Delete,Remove any person or organization on the syst
 
 # Contribution:
 - Make your Fork and start your custom edit.
-- I will let some tasks if you like to contribute or training.
+- I will leave some tasks if you like to contribute or training.
 - you can also modify any bugs ~~in case you found~~.
 - Open issues and select easiest one to you and start your contribute 
 
