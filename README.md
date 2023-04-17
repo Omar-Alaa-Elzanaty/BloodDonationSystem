@@ -48,11 +48,11 @@ Admin has permission to Add,Delete,Remove any person or organization on the syst
 - no one can donate more than 1 time in the same day.
 
 # system Design:
-- **UML Classes Digramn:**
+### - **UML Classes Digramn:**
 ![UML](https://user-images.githubusercontent.com/94639386/232314106-8b8c37c5-a16b-445e-bb79-74e263415b38.PNG)
  -  Using strategy design pattern with signup.
  -  I didn't make startegy pattern to login as login auto detect type of account by username and pass but sign up user should detect type of account.
-- **Database Digram:**
+### - **Database Digram:**
 
 ![DB Digram](https://user-images.githubusercontent.com/94639386/232314375-f0a92946-213f-48ac-9602-72637a3aa908.PNG)
 
