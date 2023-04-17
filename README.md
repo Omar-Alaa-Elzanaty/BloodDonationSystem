@@ -13,7 +13,7 @@
 - Get Msql 
 - Run file DBcreation.sql 
 
-## Used Tools:
+# Used Tools:
 - c#
 - Msql
 - Windows Forms
@@ -22,11 +22,11 @@
 - Open closed principle <sup>(OCP)</sup> 
 
 # System Analysis:
-
+## summary:
 **Blood Donation system was created to connect between the donor and organizations.Any person want to 
 donate can get account on system and donating blood.Any organization can start recieving donations
 by regitser in the system and getreport about all amount and types of bloods it recieve.
-Admin has permission to Add,Delete,Remove any person or organization on the system**
+Admin has permission to Add,Delete,Remove any person or organization on the system.**
 
 ## Actors:
 1- person
@@ -55,15 +55,13 @@ Admin has permission to Add,Delete,Remove any person or organization on the syst
 - **Database Digram:**
 ![DB Digram](https://user-images.githubusercontent.com/94639386/232314375-f0a92946-213f-48ac-9602-72637a3aa908.PNG)
 
-## Contribution:
+# Contribution:
 - Make your Fork and start your custom edit.
 - I will let some tasks if you like to contribute or training.
 - you can also modify any bugs ~~in case you found~~.
 - Open issues and select easiest one to you and start your contribute 
 
-## MIT License
-
-Copyright (c) [2023] [omar alaa]
+# MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
