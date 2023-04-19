@@ -17,9 +17,13 @@ namespace BloodDonationSystem
         {
             InitializeComponent();
             this.user = user;
-            foreach (var organize in Donation.Organizationlist())
+            var organizes = Donation.Organizationlist();
+            if(organizes != null)
             {
-                listView1.Items.Add(organize.Value.ToString()).SubItems.Add(organize.Key);
+                foreach (var organize in organizes)
+                {
+                    listView1.Items.Add(organize.Value.ToString()).SubItems.Add(organize.Key);
+                }
             }
         }
 
@@ -35,7 +39,8 @@ namespace BloodDonationSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(textBox1.Text.ToString(),out int id)&&Donation.Organizationlist().ContainsValue(id)) 
+            var x = Donation.Organizationlist();
+            if (int.TryParse(textBox1.Text.ToString(),out int id)&&x!=null&&x.ContainsValue(id)) 
             {
                 MessageBox.Show(this.user.donate(id));
                 this.Visible = false;

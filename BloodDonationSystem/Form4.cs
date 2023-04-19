@@ -75,7 +75,7 @@ namespace BloodDonationSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"Name: {user.FirstName} {user.LastName}\nEmail: user.Email\nBlood type: {user.BloodType}");
+            MessageBox.Show($"Name: {user.FirstName} {user.LastName}\nEmail: {user.Email}\nBlood type: {user.BloodType}");
         }
     }
 }

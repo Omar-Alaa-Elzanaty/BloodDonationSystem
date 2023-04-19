@@ -41,3 +41,5 @@ Forms Names : from1: Login page
 	      form2: Signup person page
 	      form3: Signup organization page
 	      form4: Person profile page
+	      from5: Organization profile page
+	      from6: Donate page

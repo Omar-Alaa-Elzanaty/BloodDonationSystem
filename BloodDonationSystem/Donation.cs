@@ -10,7 +10,7 @@ namespace BloodDonationSystem
 {
     public static class Donation
     {
-        public static Dictionary<string,int>? Organizationlist()
+        public static Dictionary<string,int> Organizationlist()
         {
             SqlCommand cmd = new SqlCommand($"select O_id,org_name from Organization",
                                                Database.Connection);
