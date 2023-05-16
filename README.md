@@ -1,6 +1,6 @@
 # BloodDonationSystem
 ## What was my motivation?
-  I learned some of programming basics and i try to apply some of it.
+  I learned some of programming basices and i try to apply some of it.
 ## What I learned ?
  - manage a project and create it from scratch.
  - Apply Design pattern.
