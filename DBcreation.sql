@@ -17,7 +17,7 @@ p_id int primary key,
 fname varchar(50),
 lname varchar(50),
 email varchar(50) unique,
-bloodtype char(2) check(bloodtype in('A+','A-','B+','B-','O+','O-','AB+','AB-'))
+bloodtype char(3) check(bloodtype in('A+','A-','B+','B-','O+','O-','AB+','AB-'))
 constraint fk_pid foreign key (p_id) references Account(acc_id)
 )
 create table Organization(
